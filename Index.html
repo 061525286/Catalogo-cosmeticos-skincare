@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera - Cosmeticos -Skincare</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+            padding-top: 80px;
+        }
+
+
+        /* Menú de navegación fijo */
+        .menu-secciones {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 15px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px;
+        }
+
+
+        .menu-secciones h3 {
+            color: white;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+
+        .menu-secciones a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+
+        .menu-secciones a:hover {
+            background: rgba(255,255,255,0.4);
+            transform: translateY(-2px);
+        }
+
+
+        /* Título principal */
+        h1 {
+            text-align: center;
+            color: #667eea;
+            font-size: 3em;
+            margin: 30px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+
+        /* Secciones de marcas */
+        h2 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            margin: 40px 0 30px 0;
+            border-radius: 10px;
+            font-size: 2em;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+
+        /* Contenedor para cada producto */
+        .producto {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px auto;
+            max-width: 800px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+
+        /* Logos de marcas */
+        .logo-marca {
+            display: block;
+            max-width: 300px;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+
+        /* Nombres de productos */
+        h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin: 15px 0 10px 0;
+        }
+
+
+        /* Precios */
+        .precio {
+            color: #27ae60;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+
+        /* Imágenes de productos */
+              .producto img {
+    display: block;
+    width: 350px;      /* mismo ancho */
+    height: 350px;     /* misma altura */
+    object-fit: cover; /* recorta sin deformar */
+    margin: 28px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.img-linea {
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+        /* Descripciones */
+        h4 {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 15px 0;
+            text-align: justify;
+            font-weight: normal;
+        }
+
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+
+            .menu-secciones {
+                justify-content: center;
+            }
+
+
+            .menu-secciones a {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+
+
+            .producto {
+                padding: 15px;
+                margin: 15px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- MENÚ DE SECCIONES FIJO -->
+<div class="menu-secciones">
+    <h3>Ir a:</h3>
+    <a href="#atenea">Atenea</a>
+    <a href="#bloomshell">Bloomshell</a>
+    <a href="#montoc">Montoc</a>
+    <a href="#ani-k">Ani-k</a>
+    <a href="#lula">Lula</a>
+    <a href="#samy">Samy</a>
+    <a href="#vogue">Vogue</a>
+    <a href="#ruby-rose">Ruby-rose</a>
+    <a href="#ana-maria">Ana-maria</a>
+    <a href="#girly">Girly</a>
+</div>
+
+
+<h1>Cosmeticos - Skincare</h1>
+
+
+<h2 id="atenea">🏷️ MARCA ATENEA</h2>
+
+
+<img class="logo-marca" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC79Finugrbdvltikw3pt_Gv5IgfliTPsvKw&s" alt="Logo Atenea">
+
+
+<div class="producto">
+    <h3>BASE DE MAQUILLAJE LÍQUIDA 1ST SCENE</h3>
+    <p class="precio">$53.000</p>
+    <img src="https://ateneaprofesional.com/cdn/shop/products/base-liquida-1st-scene.jpg" alt="Base líquida 1st Scene Atenea">
+</div>
+
+<div class="producto">
+    <h3>CORRECTOR LÍQUIDO 1ST SCENE</h3>
+    <p class="precio">$49.000</p>
+    <img src="https://ateneaprofesional.com/cdn/shop/products/corrector-liquido-1st-scene.jpg" alt="Corrector líquido 1st Scene Atenea">
+</div>
+
+<div class="producto">
+    <h3>GUMMY PRIMER</h3>
+    <p class="precio">$46.000</p>
+    <img src="https://ateneaprofesional.com/cdn/shop/products/gummy-primer.jpg" alt="Gummy Primer Atenea">
+</div>
+
+<div class="producto">
+    <h3>RUBOR CREMOSO EN BARRA COLLECTION</h3>
+    <p class="precio">$44.000</p>
+    <img src="https://ateneaprofesional.com/cdn/shop/products/rubor-cremoso-barra.jpg" alt="Rubor cremoso en barra Atenea">
+</div>
+
+<div class="producto">
+    <h3>ILUMINADOR EFECTO HÚMEDO SUBLIME</h3>
+    <p class="precio">$39.000</p>
+    <img src="https://ateneaprofesional.com/cdn/shop/products/iluminador-efecto-humedo.jpg" alt="Iluminador efecto húmedo Atenea">
+</div>
+
+<div class="producto">
+    <h3>CLICK LIPSTICK SUBLIME</h3>
+    <p class="precio">$28.000</p>
+    <img src="https://ateneaprofesional.com/cdn/shop/products/click-lipstick-sublime.jpg" alt="Click Lipstick Sublime Atenea">
+</div>
+
+<div class="producto">
+    <h3>PESTAÑINA 1ST SCENE</h3>
+    <p class="precio">$24.000</p>
+    <img src="https://ateneaprofesional.com/cdn/shop/products/pestanina-1st-scene.jpg" alt="Pestañina 1st Scene Atenea">
+</div>
+
+<div class="producto">
+    <h3>PALETA DE SOMBRAS STORYTIME</h3>
+    <p class="precio">$150.000</p>
+    <img src="https://ateneaprofesional.com/cdn/shop/products/paleta-sombras-storytime.jpg" alt="Paleta de sombras Storytime Atenea">
+</div>
